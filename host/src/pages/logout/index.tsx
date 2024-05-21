@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useRouter } from 'next/router';
 import { useDreamAuth } from '@dream.mf/oidc';
 import Layout from "../../components/layout";
 
-
 const LogoutPage = () => {
     const auth = useDreamAuth();
-    const navigate = useNavigate();
+    const router = useRouter();
     
     useEffect(() => {
         auth.signoutRedirect()
         .then(() => {
-            navigate('/');
+            router.push('/');
         })
         .catch((err) => { 
             console.warn(`Something happened with the logout func.`, err);
