@@ -1,0 +1,24 @@
+{
+	"name": "microfrontends-react",
+	"version": "2.0.0",
+	"description": "Microfrontends using a React Host and React Remotes",
+	"scripts": {
+		"start": "pnpm -r --reporter append-only --no-bail --workspace-concurrency 100 start"
+	},
+	"keywords": [],
+	"author": "Chris Fryer <cfryerdev@gmail.com>",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"@biomejs/biome": "1.5.3",
+		"@rspack/cli": "^0.6.5",
+		"@rspack/core": "^0.6.5",
+		"@types/node": "^18.17.17",
+		"@typescript-eslint/eslint-plugin": "^5.62.0",
+		"@typescript-eslint/parser": "^5.62.0",
+		"eslint": "^8.49.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-prettier": "^5.0.0",
+		"typescript": "^5.2.2"
+	}
+}
